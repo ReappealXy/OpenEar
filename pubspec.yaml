@@ -1,0 +1,70 @@
+name: openear
+description: "OpenEar - 开源的智能录音助手：录音转写 + AI 摘要/待办/纪要/问答 + 导出 Markdown/Word/PDF。"
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # 状态管理 / 路由
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.6.2
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_markdown: ^0.7.4+3
+  flutter_svg: ^2.0.10+1
+
+  # 数据库：sqflite 手写 SQL，无需代码生成
+  sqflite: ^2.4.0
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # 录音 / 播放
+  record: ^6.0.0
+  just_audio: ^0.9.42
+  audio_session: ^0.1.21
+
+  # 权限
+  permission_handler: ^11.3.1
+
+  # 网络
+  dio: ^5.7.0
+
+  # 加密 / 签名（阿里云签名）
+  crypto: ^3.0.5
+
+  # 安全存储 API Key
+  flutter_secure_storage: ^9.2.2
+
+  # 导出
+  pdf: ^3.11.1
+  printing: ^5.13.4
+  archive: ^3.6.1
+  share_plus: ^10.0.2
+
+  # 文件选择
+  file_picker: ^8.1.2
+
+  # 工具
+  intl: ^0.20.2
+  uuid: ^4.5.1
+  collection: ^1.18.0
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
